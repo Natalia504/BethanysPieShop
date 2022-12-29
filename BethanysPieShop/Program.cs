@@ -3,7 +3,10 @@
 var builder = WebApplication.CreateBuilder(args); // looks at appsetting.json and loads those settings. These are defaults! Don't change!
 
 //register our own services:
-builder.Services.AddScoped<ICategoryRepository, MockCategoryRepository>();
+// addSingleton() - a single instance created when the request comes in
+// addScoped()
+// addTransient()
+builder.Services.AddScoped<ICategoryRepository, MockCategoryRepository>(); //a
 builder.Services.AddScoped<IPieRepository, MockPieRepository>();
 
 builder.Services.AddControllersWithViews(); // Enable MVC in this app. We started with Empty app template

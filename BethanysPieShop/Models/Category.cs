@@ -1,5 +1,4 @@
-﻿using System;
-namespace BethanysPieShop.Models
+﻿namespace BethanysPieShop.Models
 {
     public class Category
     {
