@@ -10,7 +10,7 @@ builder.Services.AddControllersWithViews(); // Enable MVC in this app. We starte
 
 var app = builder.Build();
 
-//add middlaware comps
+//add middleware components
 app.UseStaticFiles();
 
 if (app.Environment.IsDevelopment())
