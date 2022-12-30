@@ -1,10 +1,11 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace BethanysPieShop.Views.Pie;
+namespace BethanysPieShop.Views;
 
-public class List : PageModel
+public class _ViewStart : PageModel
 {
     public void OnGet()
     {
+        
     }
 }
